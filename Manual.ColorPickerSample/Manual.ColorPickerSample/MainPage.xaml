@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Manual.ColorPickerSample"
+             x:Class="Manual.ColorPickerSample.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand">
+        
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center" />
+        <Label Text="Choose a color below:"/>
+        <Button Clicked="ChooseColor_Clicked" Text="Choose Color" BackgroundColor="{Binding Color}" />
+
+        <StackLayout Margin="15">
+            <Label FontAttributes="Bold" Text="Sample Title" TextColor="{Binding Color}" />
+            <Label Text="Breast none thee me his a youth objects nor parting yes thy pride shun way near gathered bower feere his virtues albions pleasure me plain days dome have in and but native come he feel scape the from had one" LineBreakMode="WordWrap"/>
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <BoxView HeightRequest="100" BackgroundColor="{Binding Color}" />
+                <BoxView HeightRequest="100" BackgroundColor="{Binding Color}" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
