@@ -18,6 +18,9 @@ namespace Manual.ColorPickerSample
         {
             var result = await ColorPicker.GetColorAsync("Primary Color", "Choose a color:");
 
+            ////You can send your custom colors as paramters like below:
+            //var result = await ColorPicker.GetColorAsync("Primary Color", "Choose a color:",
+            //    Color.Cyan, Color.Aqua, Color.Azure, Color.Blue, Color.BlueViolet, Color.CadetBlue);
 
             if (result != null) //If result is null, user canceled to picking color
             {
